@@ -1,0 +1,396 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+}
+
+.container {
+    width: 80%;
+    max-width: 1536px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.disabled {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: line-through;
+    color: black;
+}
+
+#mainHeading{
+    text-align: center;
+    font-size: 1.5em;
+    color: rgb(0, 102, 204);
+    margin-top: 0.1em;
+}
+
+/* Header */
+header{
+    max-width: 1536px;
+    margin: auto;
+    vertical-align: middle;
+}
+
+.pageHeader {
+    display: table;
+    width: 100%;
+    vertical-align: middle;
+    background: rgb(221, 221, 221);
+    color: rgb(119, 119, 119);
+}
+
+.headerElement {
+    display: table-cell;
+    width: 33.333333%;
+    margin: auto;
+}
+
+#headerElementLeft {
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+
+#logoHeader {
+    width: 70%;
+    min-width: 280px;
+    object-fit: cover;
+    margin-top: 0.3em;
+}
+
+#headerElementCenter {
+    height: 100%;
+    min-width: 315px;
+    background-image: url('../img/brick.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#headerElementCenter h1 {
+    font-size: 1.75em;
+    margin: auto;
+    padding-top: 0.3em;
+    padding-bottom: 0.1em;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+}
+
+#svgPageHeader {
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin: auto;
+}
+
+/* Navbar */
+#navbar {
+    margin-top: 2px;
+}
+
+#navbar ul {
+    padding: 0;
+    list-style: none;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#navbar li {
+    display: inline;
+}
+
+#navbar a {
+    color: rgb(0, 102, 204);
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-right: 1.0em;
+    white-space: nowrap;
+}
+
+.navbarIcon {
+    background: rgb(0, 102, 204);
+    border-radius: 0.2em;
+    padding: 0.2em;
+    width: 1.5em;
+    height: 1.3em;
+    margin-top: 0.15em;
+    margin-right: 0.3em;
+    margin-bottom: 0.15em;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#svgNavbarSpacer {
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin: 0;
+    margin-top: 0.1em;
+}
+
+/* Index */
+#main {
+    padding-top: 3em;
+    min-height: 15em;
+    margin: auto;
+    overflow: hidden;
+}
+
+#welcomeImage {
+    float: left;
+    width: 45%;
+    margin: 0;
+    padding: 0.25em;
+}
+
+#imageWelcome{
+    display: block;
+    float: right;
+    box-sizing: border-box;
+    margin-top: 0;
+    width: 42em; 
+    height: auto; 
+    max-width: 100%;
+}
+
+#welcomeText {
+    float: right;
+    width: 55%;
+    padding: 0 30px;
+    box-sizing: border-box;
+    text-align: left
+}
+
+#welcomeText h2 {
+    font-size: 2.5em;
+    color: rgb(0, 102, 204);
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+#welcomeText h3 {
+    font-size: 1.8em;
+    margin: auto;
+    color: rgb(109, 109, 109);
+}
+
+#welcomeText p {
+    max-width: 35em;
+    font-size: 1.3em;
+}
+
+#welcomeText #nameTag {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 2em;
+}
+
+/* Footer */
+#footer {
+    padding: 0;
+    margin-top: 2em;
+}
+
+#svgDividerFooter {
+    width: 100%;
+    height: 3px;
+    display: block;
+}
+
+.footerElement {
+    background: rgb(221, 221, 221);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+#footerLeft {
+    float: left;
+}
+
+#footerRight {
+    float: right;
+}
+
+#footer ul {
+    color: rgb(109, 109, 109);
+    font-weight: 600;
+    font-size: 1.05em;
+    padding: 0;
+    padding-top: 0.2em;
+    padding-bottom: 0.1em;
+    line-height: 1.5em;
+    list-style: none;    
+    margin: 0 auto;
+    align-self: center;
+}
+
+/* Services */
+#navbar_services{
+    float: left;
+    width: 30%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+#services{
+    width: 100% - 3px;
+    font-size: 1.5em;
+    font-weight: 600;
+    background: wheat;
+}
+
+#services li {
+    color: rgb(0, 102, 204);
+}
+
+#main_services {
+    float: right;
+    width: 70%;
+    height: 500px;
+
+    background: turquoise;
+}
+
+/* Contact */
+#contact{
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    background: rgb(221, 221, 221);
+}
+
+#contactInput{
+    float: left;
+    width: 50%;
+    height: 100%;
+
+    background: yellow;
+}
+
+#contactText {
+    float: right;
+    width: 50%;
+    height: 100%;
+
+    background: skyblue;
+}
+
+#nameAndMail input[type="text"] {
+    padding: 0.2em;
+    font-size: 1.4em;
+    font-weight: 500;
+    border-radius: 0.4em;
+    box-sizing: border-box;
+}
+
+#textFieldName {
+    float: left;
+    width: 49%;
+}
+
+#textFieldMail {
+    float: right;
+    width: 50%;
+}
+
+#contactInput textarea{
+	padding:8px;
+	width:100%;
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        width: 100%;
+        margin: 0;
+        float: none;
+    }
+
+    /* Header */
+    .headerElement {
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #headerElementLeft {
+        width: 100%;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    #headerElementCenter h1 {
+        font-size: 2.em;
+        margin: auto;
+        padding-top: 0.55em;
+        padding-bottom: 0.2em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+
+    #logoHeader {
+        margin-top: 0;
+    }
+
+    #navbar {
+     margin: 0;
+     padding: 0;
+    }
+   
+    /* Main */
+    #main {
+        margin: 0;
+        padding: 0;
+    }
+
+    #welcomeImage {
+        width: 100%;
+        padding: 0em;
+        
+    }
+    
+    #imageWelcome{
+        display: block;
+        width: 100%; 
+        height: auto; 
+        max-width: 100%;
+
+    }
+    
+    #welcomeText {
+        width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    #welcomeText h2 {
+        font-size: 2.5em;
+        color: rgb(0, 102, 204);
+        margin: 0;
+        margin-top: 0.5em;
+        margin-bottom: 0.2em;
+    }
+
+    /* Footer */
+    #footer {
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footerElement {
+        width: 100%;
+    }
+}
