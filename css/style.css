@@ -353,14 +353,25 @@ header{
     }
    
     /* Main */
+    body{
+        max-width: 1536px;
+        margin: auto;
+        vertical-align: middle;
+    }
+
     #main {
-        margin: 0;
+        display: table;
+        width: 100%;
         padding: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #welcomeImage {
+        display: block;
         width: 100%;
-        padding: 0em;
+        padding: 0;
+        margin: 0;
         
     }
     
@@ -374,9 +385,20 @@ header{
     
     #welcomeText {
         width: 100%;
+        margin: auto;
         padding: 0 30px;
-        box-sizing: border-box;
+        box-sizing: border-box;        
         text-align: center;
+    }
+
+    #welcomeText p {
+        width: 100%;
+    
+        margin-top: auto;
+        margin-right: auto;
+        margin-bottom: 0.5em;
+        margin-left: auto;
+    
     }
 
     #welcomeText h2 {
@@ -387,8 +409,14 @@ header{
         margin-bottom: 0.2em;
     }
 
+    #welcomeText h3 {
+        padding-bottom: 0.8em;
+    }
+
     /* Footer */
-    #footer {
+    /*  Old style footer, with stacked elements.
+     ########################
+     #footer {
         display: block;
         width: 100%;
         padding: 0;
@@ -398,4 +426,5 @@ header{
     .footerElement {
         width: 100%;
     }
+    ######################## */
 }
